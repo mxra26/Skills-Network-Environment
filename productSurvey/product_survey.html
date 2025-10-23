@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Отзыв о роскошном бренде</title>
+</head>
+<body>
+  <h1>Добро пожаловать в Отзывы о продуктах роскошного бренда</h1>
+  <h2>Оставьте ваш отзыв</h2>
+  <label for="name">Имя:</label><br>
+  <input type="text" id="name" placeholder="Ваше имя" required><br>
+  <label for="age">Возраст:</label><br>
+  <input type="number" id="age" placeholder="Ваш возраст" required><br>
+  <label for="email">Электронная почта:</label><br>
+  <input type="email" id="email" placeholder="Ваша электронная почта" required><br>
+  <label for="job">Работа:</label><br>
+  <input type="text" id="job" placeholder="Ваша работа" required><br>
+  <label for="designation">Должность:</label><br>
+  <input type="text" id="designation" placeholder="Ваша должность" required><br>
+  <label for="productType">Тип продукта:</label><br>
+  <select id="productType" required>
+    <option value="perfume">Парфюм</option>
+    <option value="cream">Крем</option>
+    <option value="oils">Масла</option>
+  </select><br>
+  <label for="feedbackText">Отзыв:</label><br>
+  <textarea id="feedbackText" rows="5" cols="30" placeholder="Введите ваш отзыв здесь" required></textarea><br>
+<button id="submitBtn">Отправить отзыв</button>
+<hr>
+<div id="userInfo" style="display: none;">
+  <h2>Информация о пользователе:</h2>
+  <p>Имя: <span id="userName"></span></p>
+  <p>Возраст: <span id="userAge"></span></p>
+  <p>Электронная почта: <span id="userEmail"></span></p>
+  <p>Работа: <span id="userJob"></span></p>
+  <p>Должность: <span id="userDesignation"></span></p>
+  <p>Отзыв о <span id="userProductChoice"></span>: <span id="userFeedback"></span></p>
+</div>
+<script src="./product_survey.js"></script>
+</body>
+</html>
